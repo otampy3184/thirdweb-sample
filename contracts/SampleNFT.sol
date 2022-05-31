@@ -7,7 +7,7 @@ import "../node_modules/@openzeppelin/contracts/access/Ownable.sol";
 import "../node_modules/@openzeppelin/contracts/utils/Counters.sol";
 
 contract SampleNFT is ERC721, Ownable {
-    using Counters for Counters.Coutner;
+    using Counters for Counters.Counter;
     constructor() ERC721("Sapmle", "SMP"){}
     Counters.Counter private _tokenIdCounter;
 
